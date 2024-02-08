@@ -1,8 +1,10 @@
 body {
     margin: 0;
+    background-color: #dde4e4;
 }
-body {
-    margin: 0;
+a {
+   text-decoration: none;
+   font-family: 'Shantell Sans', cursive;
 }
 .container {
     display: flex;
@@ -13,15 +15,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    width: calc(100% - 10px); /* 33.33% для равномерного распределения, вычитаем margin */
-    height: 120px;
-    background-color: black;
+    width: calc(80% - 10px); /* 33.33% для равномерного распределения, вычитаем margin */
+    height: 120px; 
     margin: 5px;
     flex-grow: 1; /* Равномерное распределение доступного пространства */
+    background-color: #A3A3F5;
+    color: black;
 }
-
-
+.box:hover{
+    background-color: aqua;
+    transition: 1s;
+    border-radius: 20px;
+    font-size: 17px;
+}
 @media (max-width: 1400px) {
     .box {
         width: calc(33.33% - 10px); /* 100% на более узких экранах */
